@@ -11,7 +11,7 @@ def init(vals):
     n = len(items)
     i = 0
     j = 0
-fdsdfsdfsdasdasdas
+    
 def step():
     # TODO:
     # 1) Elegir índices a y b a comparar en este micro-paso (según tu Bubble).
@@ -21,4 +21,3 @@ def step():
     #
     # Cuando no queden pasos, devolvé {"done": True}.
     return {"done": True}
-juan escioeta
