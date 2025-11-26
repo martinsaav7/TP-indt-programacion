@@ -26,5 +26,3 @@ def step():
         j=0
         i+=1
     return {"j":j, "i":i, "swap":swap, "done":False}
-
-    return {"done": True}

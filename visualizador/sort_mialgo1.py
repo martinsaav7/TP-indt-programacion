@@ -26,6 +26,7 @@ def step():
     if items[a]<items[b]:
         items[a],items[b]=items[b],items[a]
         swap=True
+        j =j - gap
     else:
         i +=1
         if i<n:
@@ -34,10 +35,10 @@ def step():
             gap=gap//2
             i=gap
             j=i
-        return{"a":a,"b":b,"swap":swap,"done":False}
+    if gap==0:
+        return {"done":True}
+    
+    return{"a":a,"b":b,"swap":swap,"done":False}
     # TODO: implementar UN micro-paso de tu algoritmo y devolver el dict.
     # Recordá:
-    # - a, b dentro de [0, n-1]
-    # - si swap=True, primero hacé el intercambio en 'items'
-    # - cuando termines, devolvé {"done": True}
-    return {"done": True}
+    # - a, b dentro de [0, n-1return {"done": True}
