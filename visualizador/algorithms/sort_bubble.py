@@ -25,11 +25,11 @@ def step():
     swap = False
 
     if items[a] > items[b]:
-    
-        items[a], items[b] = items[b], items[a]
-        swap = True
+         items[a], items[b] = items[b], items[a]
+         swap = True
 
-   
+    j +=1
+    
     if j >= n - i - 1:
        
         j = 0
