@@ -16,25 +16,7 @@ def init(vals):
     i= gap
     j =i
 def step():
-    global items, n,gap,i,j
-    
-    if gap == 0:
-        return {"done": True}
-    a=j
-    b=j-gap
-    swap=False
-    if items[a]<items[b]:
-        items[a],items[b]=items[b],items[a]
-        swap=True
-    else:
-        i +=1
-        if i<n:
-            j=1
-        else:
-            gap=gap//2
-            i=gap
-            j=i
-        return{"a":a,"b":b,"swap":swap,"done":False}
+
     # TODO: implementar UN micro-paso de tu algoritmo y devolver el dict.
     # Recordá:
     # - a, b dentro de [0, n-1]
